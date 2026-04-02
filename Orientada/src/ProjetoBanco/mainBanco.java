@@ -12,10 +12,10 @@ public class mainBanco {
         investimentos inves = new investimentos(sc,oper);
         interfaceBanco ib = new interfaceBanco(icl, oper, usuario, inves);
         inves.menuInvestimento();
-       // ib.menuCadastro();
-      //  if (icl.logado == true) {
-         //  ib.menuUsuario();
-      //  }
+        ib.menuCadastro();
+       if (icl.logado == true) {
+           ib.menuUsuario();
+       }
 
         sc.close();
     }
